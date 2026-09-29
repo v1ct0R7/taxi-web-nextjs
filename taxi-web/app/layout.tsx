@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Rezervo taxi nga Tirana drejt Durresit, Rinasit, Vlores, Sarandes dhe çdo destinacioni në Shqipëri. Çmime të qarta dhe shërbim 24/7.",
   keywords: [
     "taxi Tirane",
-    "taxi Tirane Durres",
+    "taxi Tirane Durress",
     "taxi Rinas",
     "transport Shqiperi",
     "taxi aeroporti Tirane",
