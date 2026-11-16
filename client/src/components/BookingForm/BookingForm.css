@@ -1,0 +1,42 @@
+.booking { display: grid; grid-template-columns: minmax(340px, 440px) minmax(0, 1fr); gap: 20px; align-items: stretch; }
+.booking-form { display: grid; gap: 18px; align-content: start; padding: 22px; box-shadow: var(--shadow); }
+.booking-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; border-radius: 13px; background: var(--canvas); border: 1px solid var(--line); }
+.booking-tabs button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 42px; border: 0; border-radius: 10px; color: var(--muted); background: transparent; font-size: 14px; font-weight: 600; }
+.booking-tabs button.active { color: var(--text); background: var(--surface-raised); box-shadow: inset 0 0 0 1px var(--line-strong); }
+.booking-route { display: grid; gap: 12px; }
+
+.address-input { position: relative; display: grid; gap: 7px; }
+.address-input-label { color: var(--muted); font-size: 12px; font-weight: 500; }
+.address-input-row { position: relative; }
+.address-input-row .input { padding-left: 46px; }
+.address-input.is-active .input { border-color: var(--accent); }
+.address-marker { position: absolute; z-index: 1; top: 50%; left: 12px; display: grid; place-items: center; width: 24px; height: 24px; transform: translateY(-50%); border-radius: 7px; font: 800 12px 'Manrope', sans-serif; }
+.address-marker-pickup { color: var(--accent-ink); background: var(--accent); }
+.address-marker-dropoff { color: var(--canvas); background: var(--text); }
+.address-results { position: absolute; z-index: 1100; top: 100%; left: 0; right: 0; margin: 6px 0 0; padding: 6px; list-style: none; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface-raised); box-shadow: var(--shadow); }
+.address-results button { display: grid; gap: 2px; width: 100%; padding: 10px; border: 0; border-radius: 8px; text-align: left; background: none; }
+.address-results button:hover { background: var(--surface-hover); }
+.address-results strong { font-size: 14px; font-weight: 600; }
+.address-results small { overflow: hidden; color: var(--muted); font-size: 12px; white-space: nowrap; text-overflow: ellipsis; }
+
+.booking-locate { justify-self: start; display: inline-flex; align-items: center; gap: 7px; padding: 0; border: 0; color: var(--accent); background: none; font-size: 13px; font-weight: 600; }
+.booking-summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px; border: 1px dashed var(--line-strong); border-radius: 14px; background: var(--canvas); }
+.booking-summary > div:first-child { display: grid; gap: 2px; }
+.booking-summary > div:first-child span { font-size: 12px; }
+.booking-summary strong { font: 800 30px 'Manrope', sans-serif; letter-spacing: -.04em; }
+.booking-summary-meta { display: grid; gap: 4px; justify-items: end; color: var(--muted); font-size: 13px; text-align: right; }
+.booking-error { color: var(--danger); }
+.booking-note { display: flex; align-items: center; justify-content: center; gap: 7px; margin: -4px 0 0; color: var(--muted); font-size: 12px; }
+
+.booking-map { position: relative; min-height: 560px; }
+.booking-map .map-picker { position: absolute; inset: 0; }
+.booking-map-hint { position: absolute; z-index: 500; top: 14px; left: 50%; transform: translateX(-50%); padding: 9px 14px; border: 1px solid var(--line-strong); border-radius: 999px; background: rgba(13, 18, 20, .88); font-size: 13px; white-space: nowrap; pointer-events: none; }
+
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 900px) {
+  .booking { grid-template-columns: 1fr; }
+  .booking-map { order: -1; min-height: 340px; }
+  .booking-map-hint { font-size: 12px; }
+}

@@ -1,0 +1,13 @@
+.promo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.promo-card { display: grid; gap: 14px; padding: 20px; background: linear-gradient(160deg, rgba(233, 185, 73, .07), transparent 45%), var(--surface); }
+.promo-card-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.promo-card-time { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; }
+.promo-card-route { display: flex; align-items: center; gap: 10px; font: 700 22px 'Manrope', sans-serif; letter-spacing: -.03em; }
+.promo-card-route svg { color: var(--accent); flex: none; }
+.promo-card-price { display: flex; align-items: baseline; gap: 10px; }
+.promo-card-old { color: var(--muted); text-decoration: line-through; font-size: 15px; }
+.promo-card-new { color: var(--accent); font: 800 32px 'Manrope', sans-serif; letter-spacing: -.04em; }
+.promo-card-meta { margin: -6px 0 0; font-size: 13px; }
+.promo-empty { display: flex; gap: 16px; align-items: flex-start; padding: 22px; color: var(--accent); }
+.promo-empty strong { color: var(--text); }
+.promo-empty p { margin: 6px 0 0; font-size: 14px; line-height: 1.55; }

@@ -1,0 +1,9 @@
+.footer { margin-top: 96px; border-top: 1px solid var(--line); background: #0a0e10; }
+.footer-inner { display: flex; justify-content: space-between; gap: 32px; padding: 48px 0 28px; }
+.footer-inner p { max-width: 380px; margin: 8px 0 0; font-size: 14px; line-height: 1.6; }
+.footer-brand { font: 600 20px 'Manrope', sans-serif; color: var(--text); }
+.footer-brand strong { color: var(--accent); }
+.footer-links { display: grid; gap: 10px; align-content: start; font-size: 14px; color: var(--muted); }
+.footer-links a:hover { color: var(--text); }
+.footer-bottom { padding: 18px 0 28px; border-top: 1px solid var(--line); font-size: 12px; }
+@media (max-width: 640px) { .footer-inner { flex-direction: column; } }
